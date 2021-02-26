@@ -2,9 +2,10 @@
   "name": "indonesia2015",
   "version": "1.0.0",
   "description": "Web application showcasing the highlights from one of my trips to Indonesia",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "index.html"
+    "start": "npm-run-all --parallel devserver",
+    "devserver": "live-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dtkellogg/indonesia2015/issues"
   },
-  "homepage": "https://github.com/dtkellogg/indonesia2015#readme"
+  "homepage": "https://github.com/dtkellogg/indonesia2015#readme",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }
