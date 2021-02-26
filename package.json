@@ -1,0 +1,19 @@
+{
+  "name": "indonesia2015",
+  "version": "1.0.0",
+  "description": "Web application showcasing the highlights from one of my trips to Indonesia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtkellogg/indonesia2015.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtkellogg/indonesia2015/issues"
+  },
+  "homepage": "https://github.com/dtkellogg/indonesia2015#readme"
+}
