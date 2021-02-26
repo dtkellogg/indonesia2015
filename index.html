@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="resources/css/grid.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+    rel="stylesheet"
+  />
+<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+  <title>Indonesia 2015</title>
+</head>
+<body>
+  <header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#komodo">Komodo</a></li>
+                <li><a href="#flores">Flores</a></li>
+                <li><a href="#sulawesi">Sulawesi</a></li>
+                <li><a href="#irian-jaya">Irian Jaya</a></li>
+                <li><a href="#bali">Bali/Gilis</a></li>
+            </ul>
+        </nav>
+
+    <div class="title-text-box">
+      <h1>Indonesia<br />(2015)</h1>
+    </div>
+  </header>
+
+  <section class="section-overview js--section-features">
+    <div class="row">
+      <h2 class="secondary">Trip Overview</h2>
+      <p class="long-copy">
+        Hello and welcome to my page showing the highlights from my trip to
+        Indonesia in 2015. Over the course of 10 weeks, I travelled solo through
+        the islands of Bali, the Gilis, Komodo, Flores, Sulawesi, and Irian
+        Jaya. I have summarized the amazing things I saw on this page.
+      </p>
+    </div>
+    <div class="row js--wp-1">
+      <div class="col span-1-of-5 box">
+        <ion-icon name="color-filter-outline" class="icon-big"></ion-icon>
+        <h3>Komodo</h3>
+        <ul>
+          <li>Trekking and Dragons</li>
+          <li>Komodo Village</li>
+          <li>Diving in Komodo National Park</li>
+        </ul>
+      </div>
+      <div class="col span-1-of-5 box">
+        <ion-icon name="camera-outline" class="icon-big"></ion-icon>
+        <h3>Sulawesi</h3>
+        <ul>
+          <li>Toraja Culture</li>
+          <li>Manado</li>
+          <li>Diving in Bunaken National Park</li>
+        </ul>
+      </div>
+      <div class="col span-1-of-5 box">
+        <ion-icon name="beer-outline" class="icon-big"></ion-icon>
+        <h3>Flores</h3>
+        <ul>
+          <li>Indigenous People</li>
+          <li>Riung 17 Islands</li>
+          <li>Island Interior</li>
+        </ul>
+      </div>
+      <div class="col span-1-of-5 box">
+        <ion-icon name="airplane-outline" class="icon-big"></ion-icon>
+        <h3>Irian Jaya</h3>
+        <ul>
+          <li>Baliem Valley</li>
+          <li>Meeting the headhunters</li>
+          <li>Local cremation</li>
+        </ul>
+      </div>
+      <div class="col span-1-of-5 box">
+        <!-- <box-icon name="rocket" type="solid" class="icon-big"></box-icon> -->
+        <ion-icon name="compass-outline" class="icon-big"></ion-icon>
+        <h3>Bali</h3>
+        <ul>
+          <li>Amed</li>
+          <li>Local Fauna</li>
+          <li>Gili Islands</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-highlights">
+    <ul class="highlights-showcase clearfix">
+        <li>
+            <figure class="highlight-photo">
+                <img src="resources/img/highlight-1.JPG" alt="">
+            </figure>
+        </li>
+        <li>
+            <figure class="highlight-photo">
+                <img src="resources/img/highlight-2.JPG" alt="">
+            </figure>
+        </li>
+        <li>
+            <figure class="highlight-photo">
+                <img src="resources/img/highlight-3.JPG" alt="">
+            </figure>
+        </li>
+        <li>
+            <figure class="highlight-photo">
+                <img src="resources/img/highlight-11.JPG" alt="">
+            </figure>
+        </li>
+    </ul>
+    <ul class="highlights-showcase clearfix">
+        <li>
+            <figure class="highlight-photo">
+                <img src="resources/img/highlight-5.JPG" alt="">
+            </figure>
+        </li>
+        <li>
+            <figure class="highlight-photo">
+                <img src="resources/img/highlight-6.JPG" alt="">
+            </figure>
+        </li>
+        <li>
+            <figure class="highlight-photo">
+                <img src="resources/img/highlight-7.JPG" alt="">
+            </figure>
+        </li>
+        <li>
+            <figure class="highlight-photo">
+                <img src="resources/img/highlight-8.JPG" alt="">
+            </figure>
+        </li>
+    </ul>
+  </section>
+
+<section class="location komodo" id="komodo">
+  <div class="location-title">
+      <div class="row">
+          <h2>Komodo Island &mdash; Home of Living Dinosaurs</h2>
+      </div>
+    </div>
+
+    <div >
+        <img src="resources/css/background-1.JPG" alt="" class="location-banner">
+    </div>
+
+    <figure class="location-content left js--wp-2">
+        <div class="map">
+            <div id='map' style='width: 400px; height: 300px;'></div>
+                <script>
+                    mapboxgl.accessToken = 'pk.eyJ1IjoiZHRrZWxsb2dnIiwiYSI6ImNrYTZiYXV0YzA2bWwzMG1uamF3ZWg3eG0ifQ.X5AXY5FGVc9I5vRzczRieg';
+                    var map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/dtkellogg/ckaqc1aq88jh11jnsldm5bpjf'
+                    });
+                </script>
+        </div>
+        <div class="location-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta, temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+    </figure>
+
+    <figure class="location-content right js--wp-3">
+        <div class="location-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+        <div class="location-photo">
+            <img src="resources/img/komodo-1.JPG" alt="" class="o">
+        </div>
+    </figure>
+
+    <figure class="location-content left js--wp-4">
+        <div class="location-photo">
+            <img src="resources/img/komodo-2.JPG" alt="" class="o">
+        </div>
+        <div class="location-description">
+            <p>Lorem q dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+    </figure>
+  </section>
+
+  <section class="location flores" id="flores">
+    <div class="location-title">
+        <div class="row">
+            <h2>Flores &mdash; The Island of Snakes</h2>
+        </div>
+    </div>
+
+    <div>
+        <img src="resources/css/background-2.JPG" alt="" class="location-banner">
+    </div>
+
+    <figure class="location-content left js--wp-5">
+        <div class="map">
+            <div id='map' style='width: 400px; height: 300px;'></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZHRrZWxsb2dnIiwiYSI6ImNrYTZiYXV0YzA2bWwzMG1uamF3ZWg3eG0ifQ.X5AXY5FGVc9I5vRzczRieg';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/dtkellogg/ckaqc1aq88jh11jnsldm5bpjf'
+                });
+            </script>
+        </div>
+        <div class="location-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+    </figure>
+
+    <figure class="location-content right js--wp-6">
+        <div class="location-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+        <div class="location-photo">
+            <img src="resources/img/flores-4.JPG" alt="" class="o">
+        </div>
+    </figure>
+
+    <figure class="location-content left js--wp-7">
+        <div class="location-photo">
+            <img src="resources/img/flores-5.JPG" alt="" class="o">
+        </div>
+        <div class="location-description">
+            <p>Lorem q dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+    </figure>
+</section>
+
+<section class="location sulawesi" id="sulawesi">
+    <div class="location-title">
+        <div class="row">
+            <h2>Sulawesi &mdash; Indonesia's wildest burial ceremony</h2>
+        </div>
+    </div>
+
+    <div class="bali-photos">
+        <img src="resources/css/background-sulawesi-3.jpeg" alt="" class="location-banner">
+        <img src="resources/css/background-sulawesi-1.jpeg" alt="" class="location-banner">
+        <img src="resources/css/background-sulawesi-2.jpeg" alt="" class="location-banner">
+    </div>
+
+    <figure class="location-content left js--wp-8">
+        <div class="map">
+            <div id='map' style='width: 400px; height: 300px;'></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZHRrZWxsb2dnIiwiYSI6ImNrYTZiYXV0YzA2bWwzMG1uamF3ZWg3eG0ifQ.X5AXY5FGVc9I5vRzczRieg';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/dtkellogg/ckarl2eay1urj1iqpdhc7kfcv'
+                });
+            </script>
+        </div>
+        <div class="location-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+    </figure>
+
+    <figure class="location-content right js--wp-9">
+        <div class="location-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+        <div class="location-photo">
+            <img src="resources/img/sulawesi-1.JPG" alt="" class="o">
+        </div>
+    </figure>
+
+    <figure class="location-content left js--wp-10">
+        <div class="location-photo">
+            <img src="resources/img/sulawesi-4.JPG" alt="" class="o">
+        </div>
+        <div class="location-description">
+            <p>Lorem q dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+    </figure>
+</section>
+
+<section class="location irian-jaya" id="irian-jaya">
+    <div class="location-title">
+        <div class="row">
+            <h2>Irian Jaya &mdash; Home of Headhunters</h2>
+        </div>
+    </div>
+
+    <div class="bali-photos">
+        <img src="resources/css/background-irian-jaya-1.jpeg" alt="" class="location-banner">
+        <img src="resources/css/background-irian-jaya-2.jpeg" alt="" class="location-banner">
+        <img src="resources/css/background-irian-jaya-3.jpeg" alt="" class="location-banner">
+    </div>
+
+    <figure class="location-content left js--wp-11">
+        <div class="map">
+            <div id='map' style='width: 400px; height: 300px;'></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZHRrZWxsb2dnIiwiYSI6ImNrYTZiYXV0YzA2bWwzMG1uamF3ZWg3eG0ifQ.X5AXY5FGVc9I5vRzczRieg';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/dtkellogg/ckaqc1aq88jh11jnsldm5bpjf'
+                });
+            </script>
+        </div>
+        <div class="location-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+    </figure>
+
+    <figure class="location-content right js--wp-12">
+        <div class="location-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+        <div class="location-photo">
+            <img src="resources/img/irian-jaya-1.JPG" alt="" class="o">
+        </div>
+    </figure>
+
+    <figure class="location-content left js--wp-13">
+        <div class="location-photo">
+            <img src="resources/img/irian-jaya-2.JPG" alt="" class="o">
+        </div>
+        <div class="location-description">
+            <p>Lorem q dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+    </figure>
+</section>
+
+<section class="location bali" id="bali">
+    <div class="location-title">
+        <div class="row">
+            <h2>Bali &mdash; A Home Away From Home</h2>
+        </div>
+    </div>
+
+    <div class="bali-photos">
+        <img src="resources/css/background-bali.jpeg" alt="" class="location-banner">
+        <img src="resources/css/background-bali-3.jpeg" alt="" class="location-banner">
+        <img src="resources/css/background-bali-2.jpeg" alt="" class="location-banner">
+    </div>
+
+    <figure class="location-content left js--wp-14">
+        <div class="map">
+            <div id='map' style='width: 400px; height: 300px;'></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZHRrZWxsb2dnIiwiYSI6ImNrYTZiYXV0YzA2bWwzMG1uamF3ZWg3eG0ifQ.X5AXY5FGVc9I5vRzczRieg';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/dtkellogg/ckaqc1aq88jh11jnsldm5bpjf'
+                });
+            </script>
+        </div>
+        <div class="location-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+    </figure>
+
+    <figure class="location-content right js--wp-15">
+        <div class="location-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+        <div class="location-photo">
+            <img src="resources/img/bali-2.JPG" alt="" class="o">
+        </div>
+    </figure>
+
+    <figure class="location-content left js--wp-16">
+        <div class="location-photo">
+            <img src="resources/img/bali-7.JPG" alt="" class="o">
+        </div>
+        <div class="location-description">
+            <p>Lorem q dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
+                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
+                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
+                temporibus cumque consequatur praesentium dolore maiores vel commodi.
+            </p>
+        </div>
+    </figure>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">Home page</a></li>
+                    <li><a href="#">Travels page</a></li>
+                    <li><a href="#">Indo 2000/2001/2003</a></li>
+                    <li><a href="#">Indo 2018</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/toshi.kellogg">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li> -->
+                    <!-- <li>
+                        <a href="#">
+                            <ion-icon name="logo-google"></ion-icon>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="https://www.instagram.com/toshikellogg/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2020 by Damian Toshiya Kellogg. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+  <!-- <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script> -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond@1.4.2/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+
+    <script src="resources/js/script.js"></script>
+</body>
+</html>
+
