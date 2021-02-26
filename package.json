@@ -4,7 +4,7 @@
   "description": "Web application showcasing the highlights from one of my trips to Indonesia",
   "main": "index.js",
   "scripts": {
-    "start": ""
+    "start": "index.html"
   },
   "repository": {
     "type": "git",
