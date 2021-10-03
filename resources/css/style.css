@@ -59,6 +59,11 @@ section {
   padding: 1%;
 }
 
+.banner__container {
+  width: 100vw;
+  overflow: hidden;
+}
+
 /* ------------ HEADINGS ----------- */
 
 h1,
@@ -155,10 +160,14 @@ header {
 
 .title-text-box {
   position: absolute;
-  width: 1140px;
+  width: 100vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.header {
+  position: relative;
 }
 
 /* Main navi */
@@ -233,6 +242,7 @@ ion-icon[name="close"] {
 /* ----------------------------------------- */
 .section-overview {
   margin-bottom: 60px;
+  width: 100vw;
 }
 
 /* ----------------------------------------- */
@@ -302,6 +312,7 @@ ion-icon[name="close"] {
 
 .location-banner {
   height: 356px;
+  width: 100%;
   overflow-x: hidden;
   /* width: auto; */
   /* background-image: url(./background-1.JPG); */
