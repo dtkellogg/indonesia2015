@@ -93,6 +93,7 @@ h2 {
 h3 {
   font-size: 110%;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 h2:after,
@@ -132,8 +133,9 @@ h2:after {
   color: #b81616;
   margin-bottom: 10px;
   text-align: center;
-  /* margin-left: 25%; */
+  margin: 0 auto;
 }
+
 .icon-small {
   display: inline-block;
   width: 30px;
