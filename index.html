@@ -39,10 +39,10 @@
     <div class="row">
       <h2 class="secondary">Trip Overview</h2>
       <p class="long-copy">
-        Hello and welcome to my page showing the highlights from my trip to
-        Indonesia in 2015. Over the course of 10 weeks, I travelled solo through
-        the islands of Bali, the Gilis, Komodo, Flores, Sulawesi, and Irian
-        Jaya. I have summarized the amazing things I saw on this page.
+        Hello and welcome to my page! Below, I have visually and descriptively elaborated on the highlights from my solo trip to
+        Indonesia in 2015. Over the course of 10 weeks, I travelled throughout the islands of Bali, the Gilis, Komodo, Flores,
+        Sulawesi, Irian Jaya (West Papua). From exotic wildlife to former cannibals, I experienced one of the greatest trips in
+        my life.
       </p>
     </div>
     <div class="row js--wp-1">
@@ -50,18 +50,9 @@
         <ion-icon name="color-filter-outline" class="icon-big"></ion-icon>
         <h3>Komodo</h3>
         <ul>
-          <li>Trekking and Dragons</li>
           <li>Komodo Village</li>
+          <li>Trekking and Dragons</li>
           <li>Diving in Komodo National Park</li>
-        </ul>
-      </div>
-      <div class="col span-1-of-5 box">
-        <ion-icon name="camera-outline" class="icon-big"></ion-icon>
-        <h3>Sulawesi</h3>
-        <ul>
-          <li>Toraja Culture</li>
-          <li>Manado</li>
-          <li>Diving in Bunaken National Park</li>
         </ul>
       </div>
       <div class="col span-1-of-5 box">
@@ -71,6 +62,15 @@
           <li>Indigenous People</li>
           <li>Riung 17 Islands</li>
           <li>Island Interior</li>
+        </ul>
+      </div>
+      <div class="col span-1-of-5 box">
+        <ion-icon name="camera-outline" class="icon-big"></ion-icon>
+        <h3>Sulawesi</h3>
+        <ul>
+          <li>Toraja</li>
+          <li>Manado</li>
+          <li>Diving in Bunaken National Park</li>
         </ul>
       </div>
       <div class="col span-1-of-5 box">
@@ -154,46 +154,58 @@
     </div>
 
     <figure class="location-content left js--wp-2">
-        <div class="map">
-            <div id='map' style='width: 400px; height: 300px;'></div>
-                <script>
-                    mapboxgl.accessToken = 'pk.eyJ1IjoiZHRrZWxsb2dnIiwiYSI6ImNrYTZiYXV0YzA2bWwzMG1uamF3ZWg3eG0ifQ.X5AXY5FGVc9I5vRzczRieg';
-                    var map = new mapboxgl.Map({
-                        container: 'map',
-                        style: 'mapbox://styles/dtkellogg/ckaqc1aq88jh11jnsldm5bpjf'
-                    });
-                </script>
-        </div>
-        <div class="location-description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta, temporibus cumque consequatur praesentium dolore maiores vel commodi.
-            </p>
-        </div>
+      <div class="location-description">
+        <p>After a short stay visiting the diving village of Amed in Bali and the infamous Gili Trawangan, I made my way by
+        three-day boat ride to Komodo Island. Every tourist package that offers this trip continues on from Komodo Island to the
+        adjacent Flores. However, due to my interest in reptiles and since it had always been a dream of mine to see wild Komodo
+        dragons, I arranged to stay with my guide in Komodo Village. There are no hotels on the island and only one small
+        homestay (with minimal amenities), so this was the best option I had. As it turned out, I had found myself a pretty cool
+        family to stay with while I soaked in the island for a week.
+        </p>
+      </div>
+      <div class="location-photo">
+        <img src="resources/img/komodo-1.jpeg" alt="" class="o">
+      </div>
     </figure>
 
     <figure class="location-content right js--wp-3">
-        <div class="location-description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
-                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
-                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
-                temporibus cumque consequatur praesentium dolore maiores vel commodi.
-            </p>
-        </div>
-        <div class="location-photo">
-            <img src="resources/img/komodo-1.jpeg" alt="" class="o">
-        </div>
+      <div class="location-photo">
+        <img src="resources/img/komodo-2.jpeg" alt="" class="o">
+      </div>
+      <div class="location-description">
+        <p>Since there is barely any infrastructure on the island (there is one village and the tourist center), I took up hiking.
+        Komodo dragons are capable of killing people, so I was only allowed to explore the island with a guide. However, that
+        only enhanced my experience as I was shown dragon nests (giant mounds of dirt), endemic blue pit vipers, baby dragons
+        hiding in trees (dragons are cannibals), and the mystifying Pink Beach.
+        </p>
+      </div>
     </figure>
 
     <figure class="location-content left js--wp-4">
-        <div class="location-photo">
-            <img src="resources/img/komodo-2.jpeg" alt="" class="o">
-        </div>
-        <div class="location-description">
-            <p>Lorem q dolor sit amet consectetur adipisicing elit. Dolor quas itaque doloremque ex fuga voluptatum
-                possimus omnis quaerat in suscipit, rem excepturi quae veritatis vitae pariatur commodi nulla veniam ad
-                minima reiciendis ab corrupti velit! Laudantium illum aspernatur exercitationem possimus, sunt dicta,
-                temporibus cumque consequatur praesentium dolore maiores vel commodi.
-            </p>
-        </div>
+      <div class="map">
+        <div id='map' style='width: 400px; height: 300px;'></div>
+        <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoiZHRrZWxsb2dnIiwiYSI6ImNrYTZiYXV0YzA2bWwzMG1uamF3ZWg3eG0ifQ.X5AXY5FGVc9I5vRzczRieg';
+          var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/dtkellogg/ckaqc1aq88jh11jnsldm5bpjf'
+          });
+        </script>
+      </div>
+      <div class="location-description">
+        <p>After satiating a lifelong aspiration to see the dragons, I made my way to Labuan Bajo, Flores. Although I was leaving
+        Komodo National Park, it was only temporary. In addition to the exotic wildlife that Komodo is known for, it also has
+        some of the best scuba diving in the world. Despite just getting my diving license, I have been diving since as early as
+        4, when my dad would sink his tank and BCD into our home pool. As excited as I was about seeing the dragons, I also came
+        to see the diving. Over the three days, I made 9 dives. In terms of animals, I was able to see over 50+ manta rays (I
+        lost count..), a flamboyant cuttlefish, countless sharks (blacktips, whitetips, and occasionally greytips), pygmy
+        seahorses, many turtles (hawksbill and green) and nudibranchs. The actual dives themselves were amazing. They included a
+        sky-diving like dive at Crystal Rock, where you had to immediately dive straight down to 30 meters and grab onto a rock
+        because the current was so strong. My favorite dive was The Cauldron, which blows you on a current between two islands.
+        After the shotgun-like drift, your view expands to an endless landscape of moving soft coral. There were other great
+        dives too - you’ll have to ask me about them if you’re curious!
+        </p>
+      </div>
     </figure>
   </section>
 
